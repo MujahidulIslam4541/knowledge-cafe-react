@@ -11,6 +11,9 @@ export default function Blogs() {
             .then(data => setblogs(data))
     }, [])
     return (
-        <div>Blogs</div>
+        <div className="md:w-2/3">
+            <h1>Blogs:{Blogs.length}</h1>
+
+        </div>
     )
 }
