@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "programming-cover": "https://i.ibb.co.com/3y3wRzF/blog-cover.jpg",
+      "title": "Mastering JavaScript",
+      "author_img": "https://i.ibb.co.com/3frPGBb/young-teacher-trying-write-notes-class.jpg",
+      "author_name": "John Doe",
+      "reading_time": 5,
+      "posted-date": "2024-10-20",
+      "hashtag": ["JavaScript", "Programming", "Web Development"]
+    },
+    {
+      "id": 2,
+      "programming-cover": "https://i.ibb.co.com/3y3wRzF/blog-cover.jpg",
+      "title": "CSS in Depth",
+      "author_img": "https://i.ibb.co.com/3frPGBb/young-teacher-trying-write-notes-class.jpg",
+      "author_name": "Jane Smith",
+      "reading_time": 8 ,
+      "posted-date": "2024-09-18",
+      "hashtag": ["CSS", "Web Design", "Frontend"]
+    },
+    {
+      "id": 3,
+      "programming-cover": "https://i.ibb.co.com/3frPGBb/young-teacher-trying-write-notes-class.jpg",
+      "title": "Introduction to React",
+      "author_img": "https://example.com/author3.jpg",
+      "author_name": "Chris Johnson",
+      "reading_time": 10,
+      "posted-date": "2024-08-15",
+      "hashtag": ["React", "JavaScript", "Frontend"]
+    }
+  ]
+  
