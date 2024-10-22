@@ -3,7 +3,7 @@ import { FaRegBookmark } from "react-icons/fa6";
 
 export default function Blog({ blog, handleClickAddToBookmark ,handleClickSpentTime}) {
     // console.log(blog)
-    const { title, hashtag, cover, author_img, author_name, posted_date, reading_time } = blog
+    const {id, title, hashtag, cover, author_img, author_name, posted_date, reading_time } = blog
     return (
         <div className=''>
             <img className='rounded-xl mb-8' src={cover} alt={`Cover Picture off the title ${title}`} />
@@ -28,7 +28,7 @@ export default function Blog({ blog, handleClickAddToBookmark ,handleClickSpentT
             <p>
                 {hashtag.map((hash, idx) => <span key={idx}><a href="">#{hash}</a></span>)}
             </p>
-            <button onClick={()=>handleClickSpentTime(reading_time)} className='text-purple-600 underline font-bold mb-4'>Mark As Read</button>
+            <button onClick={()=>handleClickSpentTime(id,reading_time)} className='text-purple-600 underline font-bold mb-4'>Mark As Read</button>
         </div>
     )
 }

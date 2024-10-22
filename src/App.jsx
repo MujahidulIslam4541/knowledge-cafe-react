@@ -11,14 +11,19 @@ function App() {
 
   const [spentTime, setSpentTime] = useState(0);
 
-  const handleClickSpentTime = time => {
-    const newReadingTIme = spentTime + time;
-    setSpentTime(newReadingTIme)
-  }
 
   const handleClickAddToBookmark = blog => {
     const newBookmarks = [...bookmarks, blog];
     setBookmarks(newBookmarks)
+  }
+
+  const handleClickSpentTime = (id, time) => {
+    const newReadingTIme = spentTime + time;
+    setSpentTime(newReadingTIme)
+    // remove bookmarks
+    //  console.log('removed bookmarks',id)
+    const remainingBookmark = bookmarks.filter(bookmark => bookmark.id !== id)
+    setBookmarks(remainingBookmark)
   }
 
   return (
